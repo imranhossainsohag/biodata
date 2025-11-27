@@ -90,7 +90,7 @@ header {}
 
 .profile-frame:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.45);
+   /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.45);*/
 }
 
 .profile-frame__border {
