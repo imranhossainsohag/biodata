@@ -365,17 +365,24 @@
         <h2>Gallery</h2>
     </div>
 
-    <div class="gallery-grid">
+    <div class="gallery-grid" style="display:flex; justify-content:center;">
 
-        <figure>
+        <figure style="max-width:500px; width:100%; margin:0;">
+
             <button type="button" class="gallery-trigger"
+                style="width:100%; border:none; background:none; padding:0; cursor:pointer;"
                 data-gallery-image="imran_saver.jpg"
                 data-gallery-caption="Imran Saver">
                 
-                <img src="imran_saver.jpg" alt="Imran Saver" />
+                <img src="imran_saver.jpg" alt="Imran Saver"
+                    style="width:100%; height:350px; object-fit:cover; border-radius:16px; display:block;" />
                 
             </button>
-            <figcaption>Imran Saver</figcaption>
+
+            <figcaption style="text-align:center; padding:12px; color:#cbd5e1; font-weight:500;">
+                Imran Saver
+            </figcaption>
+
         </figure>
 
     </div>
