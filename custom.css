@@ -2,12 +2,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Noto+Sans+Bengali:wght@400;500;600&family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&family=Scheherazade+New:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Scheherazade+New:wght@600;700&display=swap" rel="stylesheet">
 
 <!-- SOLAIMAN LIPI -->
 <link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css">
 
 <style>
+
+/* =========================================
+   LOCAL BANGLA FONT
+========================================= */
 
 @font-face {
   font-family: 'Li Mahfuj AK Unicode';
@@ -16,7 +20,12 @@
   font-style: normal;
 }
 
+/* =========================================
+   ROOT COLORS
+========================================= */
+
 :root{
+
   --gold-gradient:
     linear-gradient(
       120deg,
@@ -31,16 +40,16 @@
     rgba(4,28,45,0.88);
 }
 
-/* =========================
+/* =========================================
    BODY
-========================= */
+========================================= */
 
 body{
 
   background-image:
     linear-gradient(
-      rgba(3,20,32,0.84),
-      rgba(3,20,32,0.92)
+      rgba(3,20,32,0.86),
+      rgba(3,20,32,0.94)
     ),
     url('./bg.png');
 
@@ -59,12 +68,14 @@ body{
   font-family:'Poppins',sans-serif;
 }
 
-/* =========================
+/* =========================================
    HERO
-========================= */
+========================================= */
 
 .hero-sheen{
+
   position:relative;
+
   overflow:hidden;
 }
 
@@ -81,7 +92,7 @@ body{
   background-image:
     linear-gradient(
       rgba(3,20,32,0.70),
-      rgba(3,20,32,0.78)
+      rgba(3,20,32,0.82)
     ),
     url('./bg.png');
 
@@ -89,12 +100,82 @@ body{
 
   background-position:center;
 
-  opacity:.95;
+  opacity:.96;
 }
 
-/* =========================
+/* =========================================
+   ENGLISH HERO TITLE
+========================================= */
+
+.hero-title{
+
+  font-family:
+    'Cinzel',
+    'Playfair Display',
+    serif;
+
+  font-size:
+    clamp(2.7rem,6vw,5rem);
+
+  font-weight:700;
+
+  letter-spacing:.03em;
+
+  line-height:1.1;
+
+  color:#f8f4eb;
+
+  text-transform:uppercase;
+
+  text-shadow:
+    0 3px 10px rgba(0,0,0,0.35),
+    0 0 25px rgba(255,255,255,0.05);
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.hero-subtitle{
+
+  font-family:'Poppins',sans-serif;
+
+  font-size:
+    clamp(1rem,2vw,1.35rem);
+
+  font-weight:400;
+
+  color:
+    rgba(232,244,248,0.92);
+
+  line-height:1.7;
+
+  max-width:900px;
+
+  margin:auto;
+}
+
+/* =========================================
+   ARABIC
+========================================= */
+
+.calligraphy-mark{
+
+  font-family:
+    'Scheherazade New',
+    serif;
+
+  font-size:
+    clamp(2.4rem,5vw,4rem);
+
+  color:#d8b46c;
+
+  letter-spacing:0;
+}
+
+/* =========================================
    BANGLA HEADING
-========================= */
+========================================= */
 
 .bangla-heading{
 
@@ -109,9 +190,9 @@ body{
   line-height:1.35;
 }
 
-/* =========================
-   SECTION HEADING
-========================= */
+/* =========================================
+   SECTION TITLE
+========================================= */
 
 .sec-heading p{
 
@@ -134,31 +215,16 @@ body{
     sans-serif;
 
   font-size:
-    clamp(1.9rem,4vw,2.5rem);
+    clamp(1.9rem,4vw,2.6rem);
 
   color:#f7f3ea;
 
   margin-bottom:1.5rem;
 }
 
-/* =========================
-   ARABIC
-========================= */
-
-.calligraphy-mark{
-
-  font-family:
-    'Scheherazade New',
-    serif;
-
-  letter-spacing:0;
-
-  color:#d8b46c;
-}
-
-/* =========================
+/* =========================================
    LANGUAGE SWITCHER
-========================= */
+========================================= */
 
 .lang-switcher{
 
@@ -177,7 +243,7 @@ body{
   border-radius:999px;
 
   background:
-    rgba(6,38,60,.7);
+    rgba(6,38,60,.72);
 
   border:
     1px solid rgba(213,183,122,.45);
@@ -231,9 +297,9 @@ body{
     0 10px 30px rgba(0,0,0,.35);
 }
 
-/* =========================
+/* =========================================
    PROFILE IMAGE
-========================= */
+========================================= */
 
 .profile-frame{
 
@@ -253,11 +319,12 @@ body{
   border-radius:50%;
 
   border:
-    8px solid rgba(0,123,128,.95);
+    7px solid rgba(0,123,128,.55);
 
   box-shadow:
-    0 0 0 10px rgba(255,255,255,.08),
-    0 25px 70px rgba(0,0,0,.45);
+    0 0 0 8px rgba(0,123,128,.18),
+    0 0 0 18px rgba(255,255,255,.03),
+    0 22px 55px rgba(0,0,0,.38);
 }
 
 .profile-frame:hover{
@@ -267,9 +334,9 @@ body{
     scale(1.02);
 }
 
-/* =========================
+/* =========================================
    GLASS CARD
-========================= */
+========================================= */
 
 .glass-card{
 
@@ -331,9 +398,9 @@ body{
   z-index:1;
 }
 
-/* =========================
+/* =========================================
    INFO ROW
-========================= */
+========================================= */
 
 .info-row{
 
@@ -370,9 +437,9 @@ body{
   color:#eef7fb;
 }
 
-/* =========================
+/* =========================================
    GRID
-========================= */
+========================================= */
 
 .section-grid{
 
@@ -384,9 +451,9 @@ body{
   gap:2rem;
 }
 
-/* =========================
+/* =========================================
    GALLERY
-========================= */
+========================================= */
 
 .gallery-grid{
 
@@ -444,9 +511,9 @@ body{
     rgba(232,244,248,.9);
 }
 
-/* =========================
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width:768px){
 
@@ -480,6 +547,10 @@ body{
 
   main{
     margin:10px 0;
+  }
+
+  .hero-title{
+    font-size:2.3rem;
   }
 }
 
